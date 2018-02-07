@@ -1,7 +1,23 @@
 <h1>Premiere League Teams</h1>
 
-<%= @json %>
-
+<table>
+    <tr>
+        <th>Hemmalag</th>
+        <th>Bortalag</th>
+        <th>Odds hemmavinst</th>
+        <th>Odds oavgjort</th>
+        <th>Odds bortavinst</th>
+    </tr>
+    
 <% @scheduledgames.each do |match|%>
-  <%=match.hometeam%> - <%=match.awayteam%>  <%=match.homebet%> -  <%=match.drawbet%> - <%=match.awaybet%>  <br>
+
+    <tr>
+         <td><%=match.hometeam%></td>
+         <td><%=match.awayteam%></td>
+         <td><%=match.homebet%></td>
+         <td><%=match.drawbet%></td>
+         <td><%=match.awaybet%></td>
+    </tr>
+    
 <%end%>
+</table>
