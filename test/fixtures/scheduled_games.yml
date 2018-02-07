@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hometeam: MyString
+  awayteam: MyString
+  matchday: 1
+  homebet: 1.5
+  drawbet: 1.5
+  awaybet: 1.5
+  matchdate: 2018-02-06
+
+two:
+  hometeam: MyString
+  awayteam: MyString
+  matchday: 1
+  homebet: 1.5
+  drawbet: 1.5
+  awaybet: 1.5
+  matchdate: 2018-02-06

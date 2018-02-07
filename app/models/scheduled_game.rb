@@ -1,0 +1,2 @@
+class ScheduledGame < ApplicationRecord
+end
