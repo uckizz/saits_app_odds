@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hometeam: MyString
+  awayteam: MyString
+  homeodds: 9.99
+  drawodds: 9.99
+  awayodds: 9.99
+  matchdate: 2018-02-13
+  homebookie: MyString
+  drawbookie: MyString
+  awaybookie: MyString
+
+two:
+  hometeam: MyString
+  awayteam: MyString
+  homeodds: 9.99
+  drawodds: 9.99
+  awayodds: 9.99
+  matchdate: 2018-02-13
+  homebookie: MyString
+  drawbookie: MyString
+  awaybookie: MyString

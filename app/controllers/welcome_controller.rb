@@ -3,8 +3,8 @@ class WelcomeController < ApplicationController
     
     def home
         ##Arsenal vs manchester
-        
-        @scheduledgames = ScheduledGame.where(matchday: 27)#Ändra detta till current sen!
+        @bookieodds = BookieOdd.all
+        @scheduledgames = ScheduledGame.where(matchday: 28)#Ändra detta till current sen!
         @scheduledgames.each do |game|
             homedrawaway = getLatest(game.hometeam,game.awayteam,10.0)
         

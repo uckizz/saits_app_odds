@@ -21,3 +21,29 @@
     
 <%end%>
 </table>
+<table>
+    <tr>
+        <th>Datum</th>
+        <th>Hemmalag</th>
+        <th>Bortalag</th>
+        <th>Odds hemmavinst</th>
+        <th>Odds oavgjort</th>
+        <th>Odds bortavinst</th>
+    </tr>
+    
+<% @bookieodds.each do |odds|%>
+
+    <tr>
+        <td><%=odds.matchdate%></td>
+         <td><%=odds.hometeam%></td>
+         <td><%=odds.awayteam%></td>
+         <td><%=odds.homeodds %> (<%= odds.homebookie %>)</td>
+         <td><%=odds.drawodds %>(<%= odds.homebookie %>)</td>
+         <td><%=odds.awayodds %>(<%= odds.homebookie %>)</td>
+         
+    </tr>
+    
+<%end%>
+</table>
+
+<h1><%= link_to "Scraping", scrape_home_path %></h1>

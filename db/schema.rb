@@ -10,7 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180206115118) do
+ActiveRecord::Schema.define(version: 20180213131149) do
+
+  create_table "bookie_odds", force: :cascade do |t|
+    t.string "hometeam"
+    t.string "awayteam"
+    t.decimal "homeodds"
+    t.decimal "drawodds"
+    t.decimal "awayodds"
+    t.date "matchdate"
+    t.string "homebookie"
+    t.string "drawbookie"
+    t.string "awaybookie"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "played_games", force: :cascade do |t|
     t.string "hometeam"
